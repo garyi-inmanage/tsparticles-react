@@ -19,7 +19,7 @@ const Particles: FC<IParticlesProps> = (props) => {
     return () => {
       container?.destroy();
     };
-  }, [id, props, props.url, props.options]);
+  }, [id, props.url, props.options]);
 
   return <div id={id} className={props.className}></div>;
 };
